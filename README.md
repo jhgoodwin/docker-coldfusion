@@ -1,4 +1,4 @@
-# Building a coldfusion docker images
+# Building a coldfusion docker image
 
 ## Step 1 - download the linux install binaries for 64 bit linux
 https://www.adobe.com/support/coldfusion/downloads.html
