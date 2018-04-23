@@ -19,9 +19,11 @@ sample one is provided in this repo. save to your downloads folder. Default user
 
 Change the user/pass to be whatever you want.
 
-## Step 5 - build the container - in the example below 192.168.138.115 is my IP on my private network. Port 8000 is pointed at that nginx instance aimed at my Downloads folder
+## Step 5 - build the container
 
-# build docker image using your IP and the port you mapped the nginx downloads to
+In the example below 192.168.138.115 is my IP on my private network. Port 8000 is pointed at that nginx instance aimed at my Downloads folder
+
+build docker image using your IP and the port you mapped the nginx downloads to
 
 ```
 docker build -t jhgoodwin/coldfusion --build-arg CF_INSTALLER_URL=http://192.168.138.115:8000/ColdFusion_2016_WWEJ_linux64.bin --build-arg CF_SILENT_PROPERTIES_URL=http://192.168.138.115:8000/silent.properties .
